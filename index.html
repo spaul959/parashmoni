@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parashmani Foundation</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Streamlined fonts for better UI consistency -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <h1>পরশমণি</h1>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#doctor">Doctors</a></li>
+                <li><a href="#patient">Patient Reviews</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <div class="menu-icon" id="bar">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+
+        <div class="main" id="home">
+            <div class="mainText">
+                <h1>Foundation that <br> cares for you</h1>
+                <h3>ফাউন্ডেশনের উন্নতিকল্পে নূন্যতম অর্থ প্রদান করে <br>ডাক্তার দেখাতে পারেন এবং <br>দুঃস্থদের জন্য থাকছে বিনামূল্যে চিকিৎসার সুযোগ</h3>
+                <button>Show more</button>
+            </div>
+            <div class="mainImage">
+                <img src="mains.png" alt="Medical Care Illustration">
+            </div>
+        </div>
+
+        <div id="doctor" class="section">
+            <div class="head">
+                <h1>Our Doctors</h1>
+                <p class="subtitle">Meet our experienced medical professionals</p>
+            </div>
+            <div class="teams">
+                <div class="card">
+                    <img src="Dct.jpg" alt="Dr. Subham Paul">
+                    <div class="card-info">
+                        <h2>Subham Paul</h2>
+                        <p class="specialty">General Physician</p>
+                        <p class="location"><i class="fa-solid fa-location-dot"></i> Bankura BSMCH</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="patient" class="section">
+            <div class="head">
+                <h1>Patient Reviews</h1>                
+            </div>
+            <div class="reviews">
+                <div class="patientReview">
+                    <img src="p1.png" alt="Patient Review">
+                    <img src="p2.png" alt="Patient Review">
+                </div>
+                <div class="patientReview">
+                    <img src="p3.jpg" alt="Patient Review">
+                    <img src="p4.jpg" alt="Patient Review">
+                </div>
+                <div class="patientReview">
+                    <img src="p5.jpg" alt="Patient Review">
+                    <img src="p6.jpg" alt="Patient Review">
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="section">
+            <div class="head">
+                <h1>Contact Us</h1>
+            </div>
+            <div class="contact">
+                <h2>Connect With Us</h2>
+                <input type="email" placeholder="Enter email" id="email">
+                <input type="password" placeholder="Enter password" id="password">
+                <button id="connectBtn">Submit</button>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="text">
+                <h3>About Us</h3>
+                <p>24X7 Services</p>
+                <p>Top Doctors</p>
+                <p>Best Care</p>
+                <p>Patient Support</p>
+            </div>
+            <div class="text">
+                <h3>Best Teams</h3>
+                <p>Doctors</p>
+                <p>Nursing Staff</p>
+                <p>Counselling</p>
+                <p>Pharmacy</p>
+            </div>
+            <div class="text">
+                <h3>Address</h3>
+                <p><i class="fa-solid fa-map-pin"></i> Balarampur Station road</p>
+                <p>Near Phool Chand School</p>
+                <p>Opposite Indane Gas office</p>
+                <p>West Bengal - 723143</p>
+                <p><i class="fa-solid fa-phone"></i> +91 7908187526</p>
+            </div>
+        </div>
+
+        <!-- Modal Detail -->
+        <div class="detail" id="doctorDetail">
+            <button id="closeBtn">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="content">
+                <!-- Injected via JS -->
+            </div>
+        </div>
+        <div class="overlay" id="overlay"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
